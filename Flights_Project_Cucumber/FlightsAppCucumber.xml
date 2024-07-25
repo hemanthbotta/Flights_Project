@@ -1,0 +1,26 @@
+<suite name="Flights Test Suite">
+	<test name="New User Registeration TestCase">
+		<classes>
+			<class name="TestRunners.UserRegisterationTest"></class>
+		</classes>		
+	</test>
+	 
+	<test name="User Login TestCase">
+		<classes>
+			<class name="TestRunners.UserLoginTest"></class>
+		</classes>	
+	</test>
+	
+	<test name="User Books Flight Ticket TestCase">
+		<classes>
+			<class name="TestRunners.UserBookingFlightTicketTest"></class>
+		</classes>	
+	</test>
+	
+	<test name="User Cancel Flight Ticket TestCase">
+		<classes>
+			<class name="TestRunners.UserCancelFlightTicketTest"></class>
+		</classes>	
+	</test>
+	
+</suite>
