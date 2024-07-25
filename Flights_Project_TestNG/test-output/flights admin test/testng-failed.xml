@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [flights admin test]">
+  <test thread-count="5" name="New User Registeration(failed)">
+    <parameter name="contact" value="7661960443"/>
+    <parameter name="name" value="Hemanth Kumar B"/>
+    <parameter name="mailid" value="bottahemanthkumar@gmail.com"/>
+    <parameter name="pwd" value="demo"/>
+    <classes>
+      <class name="Flights.TestCases.Test_New_User_Registeration">
+        <methods>
+          <include name="newUserRegisteration"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- Flights.TestCases.Test_New_User_Registeration -->
+    </classes>
+  </test> <!-- New User Registeration(failed) -->
+</suite> <!-- Failed suite [flights admin test] -->

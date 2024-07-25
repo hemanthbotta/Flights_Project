@@ -1,0 +1,56 @@
+<suite name ="Flights Application">
+	
+	 <test name = "New User Registeration">
+		<parameter name = "name" value = "Hemanth Kumar B"></parameter>
+		<parameter name = "contact" value = "7661960443"></parameter>
+		<parameter name = "mailid" value = "bottahemanthkumar@gmail.com"></parameter>
+		<parameter name = "pwd" value = "demo"></parameter>
+		<parameter name = "dob" value = "09-03-1998"></parameter> 
+		<classes>
+			<class name = "Flights.TestCases.Test_New_User_Registeration"></class>
+		</classes>
+	</test>
+	 
+	<test name = "User Login with Valid Data">
+		<parameter name = "userid" value = "bottahemanthkumar@gmail.com"></parameter>
+		<parameter name = "userpwd" value = "demo"></parameter>
+		<classes>
+			<class name = "Flights.TestCases.User_Login_Test_with_Valid_Data"></class>
+		</classes>
+	</test>
+	 
+	<test name = "User Login with InValid Data">
+		<parameter name = "id" value = "abc@gmail.com"></parameter>
+		<parameter name = "pwd" value = "xyz"></parameter>
+		<classes>
+			<class name = "Flights.TestCases.User_Login_Test_with_InValid_Data"></class>
+		</classes>
+	</test>
+	
+	 
+	<test name = "User Booking Flight Ticket">
+		<parameter name = "userid" value = "bottahemanthkumar@gmail.com"></parameter>
+		<parameter name = "userpwd" value = "demo"></parameter>
+		<parameter name = "dof" value = "11-June-2025"></parameter>
+		<parameter name = "flname" value = "Air India"></parameter>
+		<parameter name = "tn" value = "Hemanth kumar Botta"></parameter>
+		<parameter name = "ft" value = "2"></parameter>
+		<classes>
+			<class name = "Flights.TestCases.Test_Booking_Flight_Ticket">
+				
+			</class>
+		</classes>
+	</test>
+	
+	<test name = "User Cancellation of Flight Ticket">
+		<parameter name = "userid" value = "bottahemanthkumar@gmail.com"></parameter>
+		<parameter name = "userpwd" value = "demo"></parameter>
+		<parameter name = "orderid" value = "10928"></parameter>
+		<classes>
+			<class name = "Flights.TestCases.Test_User_Cancellation_of_Flight_Ticket">
+				
+			</class>
+		</classes>
+	</test>
+	
+</suite>

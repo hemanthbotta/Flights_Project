@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Flights Application]">
+  <test thread-count="5" name="User Booking Flight Ticket(failed)">
+    <parameter name="flname" value="Air India"/>
+    <parameter name="userpwd" value="demo"/>
+    <parameter name="dof" value="11-June-2024"/>
+    <parameter name="tn" value="Hemanth kumar Botta"/>
+    <parameter name="userid" value="bottahemanthkumar@gmail.com"/>
+    <parameter name="ft" value="2"/>
+    <classes>
+      <class name="Flights.TestCases.Test_Booking_Flight_Ticket">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="flightReservation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Flights.TestCases.Test_Booking_Flight_Ticket -->
+    </classes>
+  </test> <!-- User Booking Flight Ticket(failed) -->
+  <test thread-count="5" name="User Cancellation of Flight Ticket(failed)">
+    <parameter name="orderid" value="10928"/>
+    <parameter name="userpwd" value="demo"/>
+    <parameter name="userid" value="bottahemanthkumar@gmail.com"/>
+    <classes>
+      <class name="Flights.TestCases.Test_User_Cancellation_of_Flight_Ticket">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="flightBookingCancel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Flights.TestCases.Test_User_Cancellation_of_Flight_Ticket -->
+    </classes>
+  </test> <!-- User Cancellation of Flight Ticket(failed) -->
+</suite> <!-- Failed suite [Flights Application] -->
